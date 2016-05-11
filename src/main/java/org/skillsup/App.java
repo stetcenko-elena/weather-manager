@@ -11,6 +11,7 @@ public class App {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
         WeatherManager weatherManager = context.getBean(WeatherManager.class);
+
         weatherManager.calculate("Dnepropetrovsk");
     }
 }
